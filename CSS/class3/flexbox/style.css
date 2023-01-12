@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid green;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* shorthand for flex-direction and flex-wrap; */
+    /* flex-flow: row wrap; */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* aligns according to the base of content irrespective of parent size */
+    /* align-items: baseline;  */
+    /* short hand notation can be written as row-gap, column-gap */
+    /* gap: 10px;  */
+    /* row-gap: 0;
+    column-gap: 20px; */
+
+    /* when content is wrapped into multiple rows then gaps b/w them is managed by align content */
+    /* align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-evenly;
+    align-content: space-around; */
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.box {
+    border: 1px solid brown;
+    background-color: aqua;
+    /* width: 100px; */
+    /* saare grow karke poori width of flexbox lelenge */
+    /* flex-grow: 1; */
+
+    /* works like min-width, content badhne par woh box bhi badhega */
+    /* flex-basis: 100px; */
+    flex-basis: 50%;
+
+    /* shorthand order grow shrink basis */
+    /* flex: 3 4 2 120px; */
+}
+
+/* order is used to set ordering of children of flexbox */
+/* JISKA ORDER BADA WOH SABSE AAGE */
+#box1 {
+    /* order: 1; */
+    /* box1 ne saara bacha space leliya */
+    /* flex-grow: 1; */
+
+    /* jiska shrink bada woh jldi shrink krega  */
+    /* flex-shrink: 4; */
+    /* align-self: flex-start; */
+}
+
+#box2 {
+    /* order: 8; */
+    /* to align single element */
+    /* align-self: stretch; */
+    flex-basis: 50%;
+}
+
+#box3 {
+    /* order: 1; */
+    /* flex-grow: 1; */
+    /* align-self: flex-end; */
+}
+
+#box4 {
+    /* order: 1; */
+    /* align-self: center; */
+}

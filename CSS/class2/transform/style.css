@@ -1,0 +1,19 @@
+.translate {
+    background-color: aqua;
+    width: max-content;
+    /* (x, y) axis */
+    /* transform: translate(0, 20px); */
+    /* transform: rotate(-45deg); */
+    transform: translate(100px, 120px) scale(2, 3);
+    transform: skew(-45deg);
+}
+
+.parent {
+    perspective: 100px;
+}
+
+.box {
+    background-color: aqua;
+    width: max-content;
+    transform: translateZ(-120px);
+}
