@@ -1,0 +1,19 @@
+.container {
+    height: 700px;
+    background-color: yellow;
+    border: 1px solid red;
+    display: grid;
+    gap: 10px;
+    
+    /* when you do not know how many rows will be there, set min and max size of new row */
+    grid-auto-rows: minmax(100px, auto); /* 100px se chhoti row nhi banegi */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* 2 se zyada rows sab squeeze hojati hain */
+    /* grid-template-rows: repeat(2, 1fr);  */
+}
+
+.box {
+    background-color: aqua;
+    border: 1px solid green;
+}

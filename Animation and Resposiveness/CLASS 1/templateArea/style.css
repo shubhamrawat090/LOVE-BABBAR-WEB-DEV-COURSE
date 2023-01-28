@@ -1,0 +1,39 @@
+.container {
+    /* height: 700px; */
+    background-color: yellow;
+    border: 1px solid red;
+    display: grid;
+    /* grid-template-rows: 30px 150px 400px 40px;
+    grid-template-columns: 400px; */
+    /* naming all the sections of grid */
+    /* grid-template-areas: 
+    "hd"
+    "side"
+    "main"
+    "ft"; */
+
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "side side main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.box {
+    background-color: aqua;
+    border: 1px solid green;
+}
+
+#header {
+    grid-area: hd;
+}
+#sidebar {
+    grid-area: side;
+}
+#content {
+    grid-area: main;
+}
+#footer {
+    grid-area: ft;
+}
